@@ -27,7 +27,7 @@ int main (int argc, char * argv[])
 
 	delete [] cstr;
 
-
+	cout << "reached here";
 	//Allocate array to store file
 	string * content;
 	content = new string[numLines];
@@ -38,6 +38,7 @@ int main (int argc, char * argv[])
 	}
 
 	ifs.close();
+	cout << "reached here";
 
 	//Display line results
 	for (int i = numLines-1; i > 0; i--)
