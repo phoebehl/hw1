@@ -39,6 +39,7 @@ int main (int argc, char * argv[])
 
 	ifs.close();
 	cout << "reached here";
+	cout << numLines;
 
 	//Display line results
 	for (int i = numLines-1; i > 0; i--)
