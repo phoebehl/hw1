@@ -3,6 +3,7 @@
 #include <cstring>
 #include <string>
 #include <fstream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -20,7 +21,12 @@ int main (int argc, char * argv[])
 	//Identify how many lines in file
 	string lines;
 	getline(ifs, lines);
-	int numLines = stoi (lines,NULL);
+	int numLines;
+	char * cstr = new char [lines.length()+1];
+	numLines = atoi (cstr);
+
+	delete [] cstr;
+
 
 	//Allocate array to store file
 	string * content;
